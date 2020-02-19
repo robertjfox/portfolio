@@ -3,8 +3,9 @@ import './App.css'
 import {
   Landing,
   AboutMe,
-  Projects,
-  ProjectsMobile,
+  Project1,
+  Project2,
+  Project3,
   Contact
 } from './components'
 
@@ -14,8 +15,9 @@ function App() {
       <header className="App-header"></header>
       <Landing />
       <AboutMe />
-      <Projects />
-      <ProjectsMobile />
+      <Project1 />
+      <Project2 />
+      <Project3 />
       <Contact />
     </div>
   )
