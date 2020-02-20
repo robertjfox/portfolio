@@ -94,8 +94,8 @@ button:hover {
 }
 
 #landing .image {
+  position: fixed;
   width: 40vw;
-  position: absolute;
   bottom: 0px;
   right: 0px;
 }
@@ -118,7 +118,7 @@ button:hover {
   height: 200px;
   width: 100vw;
   background: var(--medium-blue);
-  z-index: 1;
+  z-index: 3;
 }
 
 #about-me .content {
@@ -145,6 +145,11 @@ button:hover {
   padding: 30px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 139, 0.26) 5px 3px 3px;
+  transition: 0.25s ease-in;
+}
+
+#about-me .card:hover {
+  background: rgb(207, 207, 207);
 }
 
 #about-me .card-back {
@@ -183,12 +188,29 @@ button:hover {
   justify-content: center;
   height: 600px;
   width: 100vw;
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+  z-index: 2;
 }
 
 #project-container.fit-minded {
   height: 700px;
   align-items: flex-end;
+  background: white;
+}
+
+#project-container.rev-you {
+  background: rgb(219, 240, 255);
+}
+
+#project-container.you-tuba {
+  background: white;
+}
+
+#project-container.you-tuba .logo {
+  width: 250px;
+}
+
+#project-container .you-tuba-images {
+  height: 80%;
 }
 
 #project-container .rev-you {
@@ -199,7 +221,6 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   height: 600px;
   width: 100vw;
   max-width: 1400px;
@@ -223,6 +244,7 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
   width: 30vw;
+  min-width: 400px;
   max-width: 600px;
   height: 80%;
   /* background: blue; */
@@ -278,6 +300,7 @@ button:hover {
   background-repeat: repeat;
   background-size: 35vw;
   background-attachment: fixed;
+  z-index: 2;
 }
 
 #contact .gradient {
@@ -376,12 +399,28 @@ button:hover {
 @media only screen and (max-width: 800px) {
   #landing {
     background-size: 75vw;
+    height: 100vh;
+  }
+
+  #landing .image {
+    display: block;
+    width: 80vw;
+    bottom: 0px;
+    right: 0px;
   }
 
   #landing-left {
     align-items: center;
     text-align: center;
     margin: 0px;
+  }
+
+  #landing-right {
+    height: 100vh;
+  }
+
+  #landing-text {
+    margin-top: -40vh;
   }
 
   #landing img {
@@ -400,8 +439,33 @@ button:hover {
     height: auto;
   }
 
+  #project-container,
+  #project-container.fit-minded,
+  #project-container.rev-you,
+  #project-container.you-tuba {
+    height: 960px;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
   #project {
-    /* height: auto; */
+    flex-wrap: wrap;
+  }
+
+  #project .right {
+    min-width: 330px;
+  }
+
+  #project .right button {
+    width: 100px;
+  }
+
+  #project .you-tuba-images {
+    height: 270px;
+  }
+
+  #contact {
+    background-size: 75vw;
   }
 
   #contact form {

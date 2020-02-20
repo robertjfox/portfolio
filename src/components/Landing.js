@@ -31,9 +31,9 @@ export const Landing = () => {
         </Link>
       </div>
       <div id="landing-right"></div>
-      {/* <Fade right delay={500}>
+      <Fade right delay={500}>
         <img src="aboutMe/robBlue.png" alt="me" className="image" />
-      </Fade> */}
+      </Fade>
     </div>
   )
 }

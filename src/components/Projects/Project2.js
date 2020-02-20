@@ -10,15 +10,19 @@ export const Project2 = () => {
   const slides = [
     {
       key: 1,
-      content: <img src="/FitMinded/mobile01.png" alt="1" />
+      content: <img src="/RevYou/mobile01.png" alt="1" />
     },
     {
       key: 2,
-      content: <img src="/FitMinded/mobile02.png" alt="2" />
+      content: <img src="/RevYou/mobile02.png" alt="2" />
     },
     {
       key: 3,
-      content: <img src="/FitMinded/mobile03.png" alt="3" />
+      content: <img src="/RevYou/mobile03.png" alt="3" />
+    },
+    {
+      key: 4,
+      content: <img src="/RevYou/mobile04.png" alt="4" />
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => setSlide(index) }
@@ -27,7 +31,7 @@ export const Project2 = () => {
   return (
     <div id="project-container" className="rev-you">
       <div id="project" className="rev-you">
-        <Fade left>
+        <Fade right>
           <div className="left">
             <Carousel
               goToSlide={slide}
@@ -38,18 +42,18 @@ export const Project2 = () => {
             />
           </div>
         </Fade>
-        <Fade right>
+        <Fade left>
           <div className="right">
-            <img src="/FitMinded/logo.png" alt="logo" className="logo" />
+            <img src="/RevYou/logo.png" alt="logo" className="logo" />
             <h3>
-              A platform for connecting individuals with similar athletic
-              interests.
+              A productivity application for creating and maintaining habits and
+              visually tracking your progress over time.
             </h3>
             <StackLogos stack={['react', 'redux', 'mongoDB', 'firebase']} />
             <p>
-              Pariatur sit elit excepteur ex sunt labore. Deserunt ipsum do
-              ullamco minim culpa in. Qui minim duis sit fugiat veniam cillum
-              dolore aute laboris laborum tempor et in anim.
+              RevYou takes daily input for a set of custom habits and parses
+              that data to render D3 components. This project was built alone
+              over a few days for a hackathon event.
             </p>
             <div className="button-cont">
               <button>GITHUB</button>

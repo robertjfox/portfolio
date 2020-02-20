@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from 'react-device-detect'
+import { BrowserRouter } from 'react-router-dom'
 
 export const Card1 = () => {
   const [flipped, setFlipped] = useState(false)

@@ -47,9 +47,10 @@ export const Project1 = () => {
             </h3>
             <StackLogos stack={['react', 'redux', 'mongoDB', 'firebase']} />
             <p>
-              Pariatur sit elit excepteur ex sunt labore. Deserunt ipsum do
-              ullamco minim culpa in. Qui minim duis sit fugiat veniam cillum
-              dolore aute laboris laborum tempor et in anim.
+              FitMinded takes advantage of a non-realtional database to
+              efficiently analyze user relationships. I was responsible for
+              developing the database schema, the matching algorithm, the
+              recommedation map, and the UX/UI.
             </p>
             <div className="button-cont">
               <button>GITHUB</button>
