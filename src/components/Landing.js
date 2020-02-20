@@ -23,7 +23,7 @@ export const Landing = () => {
           to="about-me"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-250}
           duration={375}
           className="landing-button"
         >

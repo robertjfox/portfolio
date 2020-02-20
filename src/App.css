@@ -51,6 +51,40 @@ button:hover {
   font-weight: 800;
 }
 
+/* NAVBAR */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background: var(--dark-blue);
+  z-index: 4;
+  box-shadow: rgba(0, 0, 139, 0.4) 0px 4px 4px;
+}
+
+#navbar .left {
+  margin-left: 50px;
+}
+
+#navbar .right {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 50px;
+}
+
+#navbar .right img {
+  height: 30px;
+  transition: 0.25s ease-in;
+}
+
+#navbar .right img:hover {
+  opacity: 0.4;
+}
+
 /* LANDING PAGE */
 
 #landing {

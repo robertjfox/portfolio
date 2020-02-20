@@ -1,3 +1,4 @@
+export { Navbar } from './Navbar'
 export { Landing } from './Landing'
 export { AboutMe } from './AboutMe'
 export { Card1 } from './Cards/Card1'

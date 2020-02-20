@@ -16,9 +16,11 @@ export const Card3 = () => {
           <img src="/icons/artistBlue.png" alt="code" />
         </div>
         <p>
-          My desire to take my design talent to the next level drove me to learn
-          full-stack web development and ultimately attend a full-time coding
-          bootcamp.
+          As much of what I do is virtual, it's important for me not to lose
+          touch with physical design and expression.
+          <br />
+          <br />
+          Check out my work.
         </p>
       </div>
       <div className="card-back" onClick={toggleFlipped}>

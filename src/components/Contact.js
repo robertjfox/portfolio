@@ -1,12 +1,9 @@
 import React from 'react'
-import { Fade, Zoom } from 'react-reveal'
+import { Fade } from 'react-reveal'
 
 export const Contact = () => {
   return (
     <div id="contact">
-      {/* <div className="title">
-        <span>CONTACT ME</span>
-      </div> */}
       <form>
         <Fade left delay={100}>
           <input type="text" placeholder="Your Name" />
