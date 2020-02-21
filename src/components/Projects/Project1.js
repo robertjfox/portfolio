@@ -26,8 +26,8 @@ export const Project1 = () => {
 
   return (
     <div id="project-container" className="fit-minded">
-      <div id="project" className="fit-minded">
-        <Fade left>
+      <Fade>
+        <div id="project" className="fit-minded">
           <div className="left">
             <Carousel
               goToSlide={slide}
@@ -37,8 +37,6 @@ export const Project1 = () => {
               offsetRadius={1}
             />
           </div>
-        </Fade>
-        <Fade right>
           <div className="right">
             <img src="/FitMinded/logo.png" alt="logo" className="logo" />
             <h3>
@@ -58,8 +56,8 @@ export const Project1 = () => {
               <button>VIDEO</button>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div>
+      </Fade>
     </div>
   )
 }

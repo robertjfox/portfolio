@@ -7,12 +7,12 @@ export const Landing = () => {
     <div id="landing">
       <div id="landing-left">
         <div id="landing-text">
-          <Fade left delay={500}>
+          <Fade left delay={1000}>
             <h1>
               Hi, I'm <span>Rob</span>
             </h1>
           </Fade>
-          <Fade left delay={1000}>
+          <Fade left delay={1250}>
             <h1>
               and I'm a full-stack <span>software engineer.</span>
             </h1>
@@ -31,7 +31,7 @@ export const Landing = () => {
         </Link>
       </div>
       <div id="landing-right"></div>
-      <Fade right delay={500}>
+      <Fade right delay={1500}>
         <img src="aboutMe/robBlue.png" alt="me" className="image" />
       </Fade>
     </div>

@@ -31,37 +31,33 @@ export const Project2 = () => {
   return (
     <div id="project-container" className="rev-you">
       <div id="project" className="rev-you">
-        <Fade right>
-          <div className="left">
-            <Carousel
-              goToSlide={slide}
-              slides={slides}
-              config={config.gentle}
-              showNavigation={false}
-              offsetRadius={1}
-            />
+        <div className="left">
+          <Carousel
+            goToSlide={slide}
+            slides={slides}
+            config={config.gentle}
+            showNavigation={false}
+            offsetRadius={1}
+          />
+        </div>
+        <div className="right">
+          <img src="/RevYou/logo.png" alt="logo" className="logo" />
+          <h3>
+            A productivity application for creating and maintaining habits and
+            visually tracking your progress over time.
+          </h3>
+          <StackLogos stack={['react', 'redux', 'mongoDB', 'firebase']} />
+          <p>
+            RevYou takes daily input for a set of custom habits and parses that
+            data to render D3 components. This project was built alone over a
+            few days for a hackathon event.
+          </p>
+          <div className="button-cont">
+            <button>GITHUB</button>
+            <button>HEROKU</button>
+            <button>VIDEO</button>
           </div>
-        </Fade>
-        <Fade left>
-          <div className="right">
-            <img src="/RevYou/logo.png" alt="logo" className="logo" />
-            <h3>
-              A productivity application for creating and maintaining habits and
-              visually tracking your progress over time.
-            </h3>
-            <StackLogos stack={['react', 'redux', 'mongoDB', 'firebase']} />
-            <p>
-              RevYou takes daily input for a set of custom habits and parses
-              that data to render D3 components. This project was built alone
-              over a few days for a hackathon event.
-            </p>
-            <div className="button-cont">
-              <button>GITHUB</button>
-              <button>HEROKU</button>
-              <button>VIDEO</button>
-            </div>
-          </div>
-        </Fade>
+        </div>
       </div>
     </div>
   )

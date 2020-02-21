@@ -3,11 +3,11 @@
   --medium-blue: rgb(0, 105, 175);
   --dark-blue: rgb(0, 71, 119);
   --orange: rgb(255, 140, 0);
-  --gradient: linear-gradient(0deg, rgba(255, 192, 203, 0), rgb(55, 192, 255));
+  --gradient: linear-gradient(0deg, rgba(255, 192, 203, 0), rgb(0, 4, 218));
   --gradient-reverse: linear-gradient(
     180deg,
     rgba(255, 192, 203, 0),
-    rgb(55, 192, 255)
+    ‰ rgb(17, 0, ‰110)
   );
 }
 
@@ -60,9 +60,9 @@ button:hover {
   position: fixed;
   width: 100vw;
   height: 60px;
-  background: var(--dark-blue);
+  /* background: var(--medium-blue); */
   z-index: 4;
-  box-shadow: rgba(0, 0, 139, 0.4) 0px 4px 4px;
+  /* box-shadow: rgba(0, 0, 139, 0.4) 0px 4px 4px; */
 }
 
 #navbar .left {
@@ -79,6 +79,7 @@ button:hover {
 #navbar .right img {
   height: 30px;
   transition: 0.25s ease-in;
+  filter: drop-shadow(3px 3px 3px rgba(0, 8, 83, 0.534));
 }
 
 #navbar .right img:hover {
@@ -95,7 +96,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   background: rgb(0, 98, 163);
-  background-image: url('/wallpapers/05white.png');
+  /* background-image: url('/wallpapers/05white.png'); */
   background-repeat: repeat;
   background-size: 35vw;
   background-attachment: fixed;
@@ -124,12 +125,12 @@ button:hover {
   position: absolute;
   height: 120vh;
   width: 100vw;
-  background-image: var(--gradient-reverse);
+  /* background-image: var(--gradient-reverse); */
 }
 
 #landing .image {
   position: fixed;
-  width: 40vw;
+  width: 30vw;
   bottom: 0px;
   right: 0px;
 }
@@ -285,7 +286,7 @@ button:hover {
 }
 
 #project .right p,
-#project .right h2 {
+#project .right h3 {
   text-align: justify;
   margin: 0px;
 }
@@ -315,7 +316,7 @@ button:hover {
 #project button {
   border-radius: 15px;
   padding: 10px 30px 10px 30px;
-  background: var(--dark-blue);
+  background: var(--medium-blue);
   border: none;
   box-shadow: rgba(0, 0, 73, 0.274) 3px 3px 3px;
 }
