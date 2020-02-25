@@ -1,24 +1,32 @@
 import React from 'react'
-import { Fade } from 'react-reveal'
 
 export const Contact = () => {
   return (
     <div id="contact">
-      <form>
-        <Fade left delay={100}>
-          <input type="text" placeholder="Your Name" />
-        </Fade>
-        <Fade right delay={200}>
-          <input type="text" placeholder="Your Email" />
-        </Fade>
-        <Fade left delay={300}>
-          <textarea rows={6} placeholder="Your Message" />
-        </Fade>
-        <Fade right delay={400}>
-          <button type="submit">SUBMIT</button>
-        </Fade>
-      </form>
-      <div className="gradient"></div>
+      <div className="title">
+        <h2>
+          <i>Contact Me</i>
+        </h2>
+        <div className="line"></div>
+      </div>
+      <div className="description">
+        <p>
+          I am currently open to job opportunities, as well as freelance and
+          contract work. Please feel free to reach out with any opportunities or
+          inquiries.
+        </p>
+      </div>
+      <div>
+        <h2>
+          <a
+            href={`mailto:${'robertjfox94@gmail.com'}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get in touch - <i>robertjfox94@gmail.com</i>
+          </a>
+        </h2>
+      </div>
     </div>
   )
 }

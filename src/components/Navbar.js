@@ -1,42 +1,83 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import { Fade } from 'react-reveal'
+import { Fade, Zoom } from 'react-reveal'
 
 export const Navbar = () => {
   return (
     <div id="navbar">
       <div className="left">
-        <h3>ROBERT FOX PORTFOLIO</h3>
-      </div>
-      <div className="right">
-        <Fade down>
+        <Zoom delay={5000}>
           <Link
             activeClass="active"
-            to="contact"
+            to="landing"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-200}
             duration={375}
             className="landing-button"
           >
-            <img src="social/contact.png" alt="contact" />
+            <div className="circle">RF</div>
+          </Link>
+        </Zoom>
+      </div>
+      <div className="right">
+        <Fade down delay={5000}>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={375}
+            className="landing-button"
+          >
+            <p>About</p>
           </Link>
         </Fade>
-        <Fade down delay={150}>
-          <a href="https://github.com/robertjfox">
-            <img src="social/github.png" alt="gmail" />
-          </a>
+        <Fade down delay={5100}>
+          <Link
+            activeClass="experience"
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={375}
+            className="landing-button"
+          >
+            <p>Experience</p>
+          </Link>
         </Fade>
-        <Fade down delay={300}>
-          <a href="https://www.linkedin.com/in/robert-fox-1b341996/">
-            <img src="social/linkedin.png" alt="linkedin" />
-          </a>
+        <Fade down delay={5200}>
+          <Link
+            activeClass="experience"
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={375}
+            className="landing-button"
+          >
+            <p>Work</p>
+          </Link>
         </Fade>
-        <Fade down delay={450}>
-          <a href="https://twitter.com/rfoxjr">
-            <img src="social/twitter.png" alt="twitter" />
-          </a>
+        <Fade down delay={5300}>
+          <Link
+            activeClass="experience"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={375}
+            className="landing-button"
+          >
+            <p>Contact</p>
+          </Link>
         </Fade>
+      </div>
+      <div className="hamburger">
+        <Zoom delay={5000}>
+          <img src="/icons/hamburger.png" alt="menu" className="hamburger" />
+        </Zoom>
       </div>
     </div>
   )

@@ -1,9 +1,12 @@
 import React from 'react'
 import './App.css'
 import {
+  Loading,
   Navbar,
+  Sidebar,
   Landing,
-  AboutMe,
+  About,
+  Experience,
   Project1,
   Project2,
   Project3,
@@ -14,13 +17,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
+      <Loading />
       <Navbar />
-      <Landing />
-      <AboutMe />
-      <Project1 />
-      <Project2 />
-      <Project3 />
-      <Contact />
+      <Sidebar />
+      <div id="main">
+        <Landing />
+        <About />
+        <Experience />
+        <Project1 />
+        <Project2 />
+        <Project3 />
+        <Contact />
+      </div>
     </div>
   )
 }
