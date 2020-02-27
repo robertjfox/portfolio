@@ -41,14 +41,14 @@ export const Project3 = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/github.png" alt="github" />
+                  <img src="icons/github.png" alt="github" />
                 </a>
                 <a
                   href={`https://www.you2ba.herokuapp.com/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/heroku.png" alt="heroku" />
+                  <img src="icons/heroku.png" alt="heroku" />
                 </a>
               </div>
             </div>

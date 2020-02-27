@@ -12,15 +12,15 @@ export const Project1 = () => {
   const slides = [
     {
       key: 1,
-      content: <img src="/FitMinded/mobile01.png" alt="1" />
+      content: <img src="FitMinded/mobile01.png" alt="1" />
     },
     {
       key: 2,
-      content: <img src="/FitMinded/mobile02.png" alt="2" />
+      content: <img src="FitMinded/mobile02.png" alt="2" />
     },
     {
       key: 3,
-      content: <img src="/FitMinded/mobile03.png" alt="3" />
+      content: <img src="FitMinded/mobile03.png" alt="3" />
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => setSlide(index) }
@@ -51,14 +51,14 @@ export const Project1 = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/github.png" alt="github" />
+                  <img src="icons/github.png" alt="github" />
                 </a>
                 <a
                   href={`https://www.fit-minded-ny.herokuapp.com/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="/icons/heroku.png" alt="heroku" />
+                  <img src="icons/heroku.png" alt="heroku" />
                 </a>
                 <div>
                   <ModalVideo
@@ -68,7 +68,7 @@ export const Project1 = () => {
                     onClose={() => setOpen(false)}
                   />
                   <img
-                    src="/icons/youtube.png"
+                    src="icons/youtube.png"
                     alt="youtube"
                     onClick={() => setOpen(true)}
                   />

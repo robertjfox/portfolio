@@ -33,7 +33,7 @@ export const About = () => {
       </div>
       <Fade up>
         <div className="headshot">
-          <img src="/aboutMe/pic5.png" alt="robert" />
+          <img src="aboutMe/pic5.png" alt="robert" />
           <div className="headshot-border"></div>
         </div>
       </Fade>

@@ -32,7 +32,7 @@ export const Landing = () => {
         wait={wait(8000)}
       >
         {arrow ? (
-          <img src="/media/down-arrow.png" alt="down" />
+          <img src="media/down-arrow.png" alt="down" />
         ) : (
           <div className="arrow-placeholder"></div>
         )}
