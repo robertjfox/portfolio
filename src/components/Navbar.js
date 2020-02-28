@@ -76,7 +76,7 @@ export const Navbar = () => {
       </div>
       <div className="hamburger">
         <Zoom delay={5000}>
-          <img src="/icons/hamburger.png" alt="menu" className="hamburger" />
+          <img src="icons/hamburger.png" alt="menu" className="hamburger" />
         </Zoom>
       </div>
     </div>
