@@ -26,7 +26,7 @@ export const Landing = () => {
         to="about"
         spy={true}
         smooth={true}
-        offset={-200}
+        offset={-100}
         duration={375}
         className="landing-button"
         wait={wait(8000)}

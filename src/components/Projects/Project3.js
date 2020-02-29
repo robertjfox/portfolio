@@ -55,8 +55,9 @@ export const Project3 = () => {
             <p className="description">
               YouTuba is an ecommerce platform for selling musical instruments.
               It leverages user sessions to allow for both guest and logged-in
-              experiences. My contribution to this project was the cart and
-              checkout features as well as all of the styling.
+              experiences, as well as the Stripe API for payments. My
+              contribution to this project was the cart and checkout features as
+              well as all of the styling.
             </p>
             <div className="technologies">
               <p>React</p>
@@ -64,6 +65,7 @@ export const Project3 = () => {
               <p>Express</p>
               <p>Node.js</p>
               <p>PostgreSQL</p>
+              <p>Stripe API</p>
             </div>
           </div>
         </div>
