@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import React, { useState, useContext } from 'react'
 import { Fade } from 'react-reveal'
+import { PageContext } from '../contexts/PageContext'
 
 export const Landing = () => {
   const [arrow, setArrow] = useState(false)
+  const { setPage } = useContext(PageContext)
 
-  const wait = time => {
+  const wait = (time) => {
     setTimeout(() => {
       setArrow(true)
     }, time)
@@ -21,22 +22,18 @@ export const Landing = () => {
       <Fade up delay={7000}>
         <p className="line-2">and I'm a software engineer based in NYC.</p>
       </Fade>
-      <Link
-        activeClass="active"
-        to="about"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={375}
-        className="landing-button"
-        wait={wait(8000)}
-      >
+
+      <div wait={wait(8000)}>
         {arrow ? (
-          <img src="media/down-arrow.png" alt="down" />
+          <img
+            src="media/down-arrow.png"
+            alt="down"
+            onClick={() => setPage(1)}
+          />
         ) : (
           <div className="arrow-placeholder"></div>
         )}
-      </Link>
+      </div>
     </div>
   )
 }

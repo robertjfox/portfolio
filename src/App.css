@@ -19,6 +19,7 @@ p {
 
 html,
 body {
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -91,6 +92,10 @@ li {
   color: var(--highlight);
 }
 
+#loading .helloWorld {
+  width: 50vw;
+}
+
 /* NAVBAR */
 
 #navbar {
@@ -101,7 +106,7 @@ li {
   top: 0;
   width: 100vw;
   height: 100px;
-  background: var(--navy);
+  /* background: var(--navy); */
   z-index: 2;
 }
 
@@ -200,29 +205,14 @@ li {
 /* MAIN WRAPPER */
 
 #main {
-  max-width: 1600px;
   min-height: 100vh;
-  padding: 50px 150px;
-  margin: 0px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-#main > * {
-  margin: 140px 0px;
-}
-
-#main #experience {
-  margin-bottom: 50px;
+  justify-content: center;
 }
 
 #main #project-container {
-  margin: 140px 0px 0px 0px;
-}
-
-#main #project-container.you-tuba {
-  margin-bottom: 140px;
+  height: 100vh;
 }
 
 /* LANDING PAGE */
@@ -232,10 +222,9 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
   text-align: center;
   letter-spacing: 1px;
-  margin-top: 60px;
 }
 
 #landing .line-1 {
@@ -276,8 +265,13 @@ li {
 
 #about {
   display: flex;
-  justify-content: space-between;
-  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#about > * {
+  margin: 0px 30px;
 }
 
 #about .line {
@@ -290,6 +284,7 @@ li {
 
 #about .left {
   width: 50%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -337,12 +332,18 @@ li {
 
 /* EXPERIENCE */
 
+#experience-cont {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 #experience {
   display: flex;
   flex-direction: column;
-  margin: 0% 10%;
-  min-width: 700px;
-  max-width: 900px;
+  justify-content: center;
+  max-width: 800px;
+  height: 100vh;
 }
 
 #experience .job {
@@ -350,6 +351,10 @@ li {
   padding: 5px 30px;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+
+#experience .job-mobile {
+  display: none;
 }
 
 #experience .line {
@@ -390,7 +395,7 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-width: 240px;
+  min-width: 250px;
   max-width: 420px;
   height: 375px;
   z-index: 1;
@@ -494,23 +499,20 @@ li {
 /* CONTACT */
 
 #contact {
-  margin-top: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  max-width: 800px;
+  justify-content: center;
+  height: 100vh;
+  padding: 0px 30%;
+  text-align: center;
 }
 
 #contact .title {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
-}
-
-#contact .title h2 {
-  /* width: 100%; */
+  width: 640px;
 }
 
 #contact .line {
@@ -525,6 +527,7 @@ li {
   background: var(--blue);
   padding: 20px;
   border-radius: 15px;
+  width: 600px;
 }
 
 #contact .description h2,
@@ -602,13 +605,13 @@ li {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
-  #main {
-    padding: 0px 40px;
+  # #main {
+    padding: 0px 0px;
     margin: 0px auto;
   }
 
   #main > * {
-    margin: 100px 0px;
+    margin: 0px 0px;
   }
 
   #navbar .right {
@@ -617,6 +620,29 @@ li {
 
   #navbar .hamburger {
     display: block;
+    z-index: 2;
+  }
+
+  #navbar .circle {
+    z-index: 2;
+  }
+
+  #navbar #hamburger-drop {
+    position: absolute;
+    background: var(--navy);
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 30px;
+  }
+
+  #navbar .hamburger-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    height: 80%;
   }
 
   #sidebar {
@@ -624,7 +650,16 @@ li {
   }
 
   #landing {
-    margin-top: 120px;
+    margin-top: 0px;
+  }
+
+  #landing .line-1 {
+    font-size: 40px;
+  }
+
+  #landing .line-2 {
+    font-size: 20px;
+    width: 80%;
   }
 
   #about .line {
@@ -632,7 +667,11 @@ li {
   }
 
   #about .left {
-    width: 100%;
+    width: 90%;
+  }
+
+  #about p {
+    font-size: 18px;
   }
 
   #about .headshot {
@@ -642,14 +681,11 @@ li {
   #experience {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
-    margin: 0px 40px;
+    width: 80%;
   }
 
   #experience li {
-    width: 120%;
-    margin-left: -30px;
-    margin-bottom: 10px;
+    display: none;
   }
 
   #experience .line {
@@ -658,13 +694,31 @@ li {
     margin-left: 20px;
   }
 
+  #experience .job {
+    display: none;
+  }
+
+  #experience .job-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--blue);
+    padding: 0px 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
   #project .right {
-    min-width: 100%;
-    margin: 20px 0px;
+    min-width: 80%;
+    margin: 0px 0px;
   }
 
   #project .line {
     display: none;
+  }
+
+  #project .left {
+    height: 50vw;
   }
 
   #project.rev-you .right {
@@ -676,7 +730,7 @@ li {
   }
 
   #project.you-tuba .right {
-    min-width: 100%;
+    min-width: 80%;
   }
 
   #project.you-tuba .left {
@@ -686,13 +740,20 @@ li {
   }
 
   #project.you-tuba .left img {
-    height: auto;
-    width: 120%;
+    /* height: 100px; */
+    width: 100%;
   }
 
   #contact {
-    width: 100%;
     margin-top: 0px;
+  }
+
+  #contact .title {
+    width: 80vw;
+  }
+
+  #contact .description {
+    width: 70vw;
   }
 
   #contact .line {

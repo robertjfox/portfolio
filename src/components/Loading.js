@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, formatMs } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,7 +18,6 @@ export const Loading = () => {
 
   React.useEffect(() => {
     function tick() {
-      // reset when reaching 100%
       setProgress(oldProgress => (oldProgress >= 100 ? 100 : oldProgress + 1))
     }
 

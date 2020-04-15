@@ -1,34 +1,19 @@
 import React from 'react'
 import './App.css'
-import {
-  Loading,
-  Navbar,
-  Sidebar,
-  Landing,
-  About,
-  Experience,
-  Project1,
-  Project2,
-  Project3,
-  Contact
-} from './components'
+import { Loading, Navbar, Sidebar } from './components'
+import Main from './Main'
+import { PageProvider } from './contexts/PageContext'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
-      <Loading />
-      <Navbar />
-      <Sidebar />
-      <div id="main">
-        <Landing />
-        <About />
-        <Experience />
-        <Project1 />
-        <Project2 />
-        <Project3 />
-        <Contact />
-      </div>
+      <PageProvider>
+        <header className="App-header"></header>
+        <Loading />
+        <Navbar />
+        <Sidebar />
+        <Main />
+      </PageProvider>
     </div>
   )
 }
