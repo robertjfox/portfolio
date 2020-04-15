@@ -16,7 +16,6 @@ function Main() {
   const { page, setPage } = useContext(PageContext)
 
   const scrollPage = (newPage) => {
-    console.log('hello', newPage)
     if (newPage != page) {
       setPage(newPage)
     }
