@@ -19,6 +19,7 @@ function Main() {
     if (newPage != page) {
       setPage(newPage)
     }
+    console.log(newPage)
   }
 
   return (

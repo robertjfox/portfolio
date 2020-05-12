@@ -605,13 +605,13 @@ li {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
-  # #main {
+  #main {
     padding: 0px 0px;
     margin: 0px auto;
   }
 
   #main > * {
-    margin: 0px 0px;
+    margin: -70px 0px 0px 0px;
   }
 
   #navbar .right {
@@ -642,7 +642,7 @@ li {
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
-    height: 80%;
+    height: 50%;
   }
 
   #sidebar {
