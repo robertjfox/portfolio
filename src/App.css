@@ -395,6 +395,14 @@ li {
   flex-wrap: wrap;
 }
 
+#project.fit-minded .modal-video {
+  top: 300vh;
+}
+
+#project.rev-you .modal-video {
+  top: 400vh;
+}
+
 #project .left {
   display: flex;
   justify-content: flex-end;

@@ -61,12 +61,14 @@ export const Project1 = () => {
                   <img src="icons/heroku.png" alt="heroku" />
                 </a> */}
                 <div>
-                  <ModalVideo
-                    channel="youtube"
-                    isOpen={open}
-                    videoId="7fnAdXZ0UAQ"
-                    onClose={() => setOpen(false)}
-                  />
+                  <div className="video-modal">
+                    <ModalVideo
+                      channel="youtube"
+                      isOpen={open}
+                      videoId="7fnAdXZ0UAQ"
+                      onClose={() => setOpen(false)}
+                    />
+                  </div>
                   <img
                     src="icons/youtube.png"
                     alt="youtube"
