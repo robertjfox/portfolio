@@ -12,20 +12,20 @@ export const Project2 = () => {
   const slides = [
     {
       key: 1,
-      content: <img src="RevYou/mobile03.png" alt="1" />
+      content: <img src="RevYou/mobile03.png" alt="1" />,
     },
     {
       key: 2,
-      content: <img src="RevYou/mobile01.png" alt="2" />
+      content: <img src="RevYou/mobile01.png" alt="2" />,
     },
     {
       key: 3,
-      content: <img src="RevYou/mobile02.png" alt="3" />
+      content: <img src="RevYou/mobile02.png" alt="3" />,
     },
     {
       key: 4,
-      content: <img src="RevYou/mobile04.png" alt="4" />
-    }
+      content: <img src="RevYou/mobile04.png" alt="4" />,
+    },
   ].map((slide, index) => {
     return { ...slide, onClick: () => setSlide(index) }
   })
@@ -57,13 +57,13 @@ export const Project2 = () => {
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
-                <a
-                  href={`https://www.revyoustack.herokuapp.com/`}
+                {/* <a
+                  href={`https://revyoustack.herokuapp.com/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src="icons/heroku.png" alt="heroku" />
-                </a>
+                </a> */}
                 <div>
                   <ModalVideo
                     channel="youtube"

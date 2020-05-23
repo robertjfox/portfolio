@@ -133,6 +133,7 @@ li {
 #navbar .circle:hover {
   border: 3px solid var(--highlight);
   color: var(--highlight);
+  cursor: pointer;
 }
 
 #navbar .right {
@@ -152,6 +153,7 @@ li {
 
 #navbar .right p:hover {
   color: var(--highlight);
+  cursor: pointer;
 }
 
 #navbar .hamburger {
@@ -172,6 +174,7 @@ li {
   left: 0;
   width: 100px;
   height: 100vh;
+  z-index: 2;
 }
 
 #sidebar .top {
@@ -244,6 +247,7 @@ li {
   animation: arrow 4s infinite;
   position: absolute;
   margin-left: -25px;
+  cursor: pointer;
 }
 
 #landing .arrow-placeholder {

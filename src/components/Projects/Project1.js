@@ -12,16 +12,16 @@ export const Project1 = () => {
   const slides = [
     {
       key: 1,
-      content: <img src="FitMinded/mobile01.png" alt="1" />
+      content: <img src="FitMinded/mobile01.png" alt="1" />,
     },
     {
       key: 2,
-      content: <img src="FitMinded/mobile02.png" alt="2" />
+      content: <img src="FitMinded/mobile02.png" alt="2" />,
     },
     {
       key: 3,
-      content: <img src="FitMinded/mobile03.png" alt="3" />
-    }
+      content: <img src="FitMinded/mobile03.png" alt="3" />,
+    },
   ].map((slide, index) => {
     return { ...slide, onClick: () => setSlide(index) }
   })
@@ -53,13 +53,13 @@ export const Project1 = () => {
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
-                <a
+                {/* <a
                   href={`https://www.fit-minded-ny.herokuapp.com/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src="icons/heroku.png" alt="heroku" />
-                </a>
+                </a> */}
                 <div>
                   <ModalVideo
                     channel="youtube"
@@ -77,10 +77,10 @@ export const Project1 = () => {
             </div>
             <p className="description">
               FitMinded is a platform that connects people with similar athletic
-              interests. It takes advantage of a non-realational database to
+              interests. It takes advantage of a non-relational database to
               efficiently analyze user relationships. I was responsible for
               developing the database schema, the matching algorithm, the
-              recommedation map, and the UX/UI.
+              recommendation map, and the UX/UI.
             </p>
             <div className="technologies">
               <p>React</p>

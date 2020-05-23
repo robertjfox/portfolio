@@ -20,7 +20,7 @@ export const Landing = () => {
         </p>
       </Fade>
       <Fade up delay={7000}>
-        <p className="line-2">and I'm a software engineer based in NYC.</p>
+        <p className="line-2">and I'm a software developer and designer.</p>
       </Fade>
 
       <div wait={wait(8000)}>
