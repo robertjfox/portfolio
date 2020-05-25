@@ -2,49 +2,35 @@ import React, { useState } from 'react'
 import { Fade } from 'react-reveal'
 
 export const Project3 = () => {
-  const [hover, setHover] = useState(true)
-
-  const toggleHover = () => {
-    setHover(!hover)
-  }
-
   return (
-    <div id="project-container" className="you-tuba">
+    <div id="project-container" className="covid-map">
       <Fade up>
-        <div id="project" className="you-tuba">
+        <div id="project" className="covid-map">
           <div className="left">
-            {hover ? (
-              <img
-                src="YouTuba/desktop01.png"
-                alt="youTuba"
-                className="you-tuba-images"
-                onMouseEnter={toggleHover}
-              />
-            ) : (
-              <img
-                src="YouTuba/desktop02.png"
-                alt="youTuba"
-                className="you-tuba-images"
-                onMouseLeave={toggleHover}
-              />
-            )}
+            <a
+              href="https://robertjfox.github.io/Covid19StateTracker/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="CovidMap/desktop01.png" alt="map on desktop view" />
+            </a>
           </div>
           <div className="right">
             <div className="title">
               <h1>
-                <i>YouTuba</i>
+                <i>Covid-19 Map</i>
               </h1>
               <div className="line"></div>
               <div className="link-cont">
                 <a
-                  href={`https://github.com/Donuts-Org/donuts-grace-shopper`}
+                  href={`https://github.com/robertjfox/Covid19StateTracker`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
                 <a
-                  href={`https://www.you2ba.herokuapp.com/`}
+                  href={`https://robertjfox.github.io/Covid19StateTracker/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -53,19 +39,17 @@ export const Project3 = () => {
               </div>
             </div>
             <p className="description">
-              YouTuba is an ecommerce platform for selling musical instruments.
-              It leverages user sessions to allow for both guest and logged-in
-              experiences, as well as the Stripe API for payments. My
-              contribution to this project was the cart and checkout features as
-              well as all of the styling.
+              I built this interactive map to help visualize the most relevant
+              data in regard to the Covid-19 Pandemic. It is very easy to get
+              lost in the sea of media opinions and figures shared without
+              context. I hope this platform can provide a clearer view of the
+              virus' localized trajectory over time.
             </p>
             <div className="technologies">
               <p>React</p>
               <p>Redux</p>
-              <p>Express</p>
-              <p>Node.js</p>
-              <p>PostgreSQL</p>
-              <p>Stripe API</p>
+              <p>Chart.js</p>
+              <p>CovidTracker API</p>
             </div>
           </div>
         </div>
