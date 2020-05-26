@@ -57,13 +57,6 @@ export const Project2 = () => {
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
-                {/* <a
-                  href={`https://revyoustack.herokuapp.com/`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="icons/heroku.png" alt="heroku" />
-                </a> */}
                 <div>
                   <ModalVideo
                     channel="youtube"

@@ -8,6 +8,7 @@ import {
   Project1,
   Project2,
   Project3,
+  MoreProjects,
   Contact,
 } from './components'
 import { PageContext } from './contexts/PageContext'
@@ -34,6 +35,7 @@ function Main() {
         <Project1 />
         <Project2 />
         <Project3 />
+        <MoreProjects />
         <Contact />
       </ReactPageScroller>
     </div>

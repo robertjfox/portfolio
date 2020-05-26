@@ -53,13 +53,6 @@ export const Project1 = () => {
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
-                {/* <a
-                  href={`https://www.fit-minded-ny.herokuapp.com/`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="icons/heroku.png" alt="heroku" />
-                </a> */}
                 <div>
                   <div className="video-modal">
                     <ModalVideo

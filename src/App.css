@@ -445,6 +445,7 @@ li {
 
 #project .title h1 {
   margin: 0px;
+  white-space: nowrap;
 }
 
 #project .title .line {
@@ -455,7 +456,9 @@ li {
 }
 
 #project.covid-map .title .line {
-  width: 35%;
+  max-width: 35%;
+  width: 10vw;
+  min-width: 0%;
 }
 
 #project .right {
@@ -515,6 +518,33 @@ li {
 
 #project .link-cont img:hover {
   filter: sepia(0.5) invert(0.45) saturate(300) hue-rotate(-70deg);
+}
+
+/* MORE PROJECTS */
+
+#more-projects-cont {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#more-projects {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#more-projects .project-additional {
+  height: 250px;
+  width: 250px;
+  background: red;
+  margin: 20px;
+  border-radius: 15px;
 }
 
 /* CONTACT */
