@@ -35,7 +35,7 @@ function Main() {
         <Project1 />
         <Project2 />
         <Project3 />
-        <MoreProjects />
+        {/* <MoreProjects /> */}
         <Contact />
       </ReactPageScroller>
     </div>

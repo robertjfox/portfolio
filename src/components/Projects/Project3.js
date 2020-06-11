@@ -8,7 +8,7 @@ export const Project3 = () => {
         <div id="project" className="covid-map">
           <div className="left">
             <a
-              href="https://robertjfox.github.io/Covid19StateTracker/"
+              href="https://robertjfox.github.io/CovidMap/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -23,14 +23,14 @@ export const Project3 = () => {
               <div className="line"></div>
               <div className="link-cont">
                 <a
-                  href={`https://github.com/robertjfox/Covid19StateTracker`}
+                  href={`https://github.com/robertjfox/CovidMap`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src="icons/github.png" alt="github" />
                 </a>
                 <a
-                  href={`https://robertjfox.github.io/Covid19StateTracker/`}
+                  href={`https://robertjfox.github.io/CovidMap/`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
