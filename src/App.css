@@ -340,6 +340,7 @@ li {
   width: 100vw;
   display: flex;
   justify-content: center;
+  z-index: 100;
 }
 
 #experience {
@@ -733,9 +734,14 @@ li {
     display: flex;
     flex-direction: column;
     width: 80%;
+    margin-top: 25px;
   }
 
   #experience li {
+    display: none;
+  }
+
+  #experience ul {
     display: none;
   }
 
@@ -746,10 +752,6 @@ li {
   }
 
   #experience .job {
-    display: none;
-  }
-
-  #experience .job-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -757,6 +759,10 @@ li {
     padding: 0px 30px;
     border-radius: 15px;
     margin-bottom: 20px;
+  }
+
+  #experience .work-date {
+    font-size: 14px;
   }
 
   #project .right {

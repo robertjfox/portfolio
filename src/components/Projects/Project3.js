@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 export const Project3 = () => {
   return (
     <div id="project-container" className="covid-map">
-      <Fade up>
+      <Fade>
         <div id="project" className="covid-map">
           <div className="left">
             <a

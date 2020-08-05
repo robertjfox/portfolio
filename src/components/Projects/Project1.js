@@ -28,7 +28,7 @@ export const Project1 = () => {
 
   return (
     <div id="project-container" className="fit-minded">
-      <Fade up>
+      <Fade>
         <div id="project" className="fit-minded">
           <div className="left">
             <Carousel

@@ -32,7 +32,7 @@ export const Project2 = () => {
 
   return (
     <div id="project-container" className="rev-you">
-      <Fade up>
+      <Fade>
         <div id="project" className="rev-you">
           <div className="left">
             <Carousel
