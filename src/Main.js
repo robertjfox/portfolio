@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react'
-import ReactPageScroller from 'react-page-scroller'
-import './App.css'
+import React, { useContext } from "react";
+import ReactPageScroller from "react-page-scroller";
+import "./App.css";
 import {
   Landing,
   About,
@@ -8,20 +8,18 @@ import {
   Project1,
   Project2,
   Project3,
-  MoreProjects,
   Contact,
-} from './components'
-import { PageContext } from './contexts/PageContext'
+} from "./components";
+import { PageContext } from "./contexts/PageContext";
 
 function Main() {
-  const { page, setPage } = useContext(PageContext)
+  const { page, setPage } = useContext(PageContext);
 
   const scrollPage = (newPage) => {
-    if (newPage != page) {
-      setPage(newPage)
+    if (newPage !== page) {
+      setPage(newPage);
     }
-    console.log(newPage)
-  }
+  };
 
   return (
     <div id="main">
@@ -35,11 +33,10 @@ function Main() {
         <Project1 />
         <Project2 />
         <Project3 />
-        {/* <MoreProjects /> */}
         <Contact />
       </ReactPageScroller>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;

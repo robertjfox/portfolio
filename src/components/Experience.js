@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
-import { Fade } from 'react-reveal'
+import React from "react";
+import { Fade } from "react-reveal";
 
 export const Experience = () => {
-  const [drop, setDrop] = useState(null)
-
   return (
     <div id="experience-cont">
       <div id="experience">
@@ -86,5 +84,5 @@ export const Experience = () => {
         </Fade>
       </div>
     </div>
-  )
-}
+  );
+};

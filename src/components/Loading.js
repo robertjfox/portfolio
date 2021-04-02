@@ -1,31 +1,33 @@
-import React, { useState } from 'react'
-import CircularProgress from '@material-ui/core/CircularProgress'
-import { makeStyles, formatMs } from '@material-ui/core/styles'
+import React, { useState } from "react";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    transform: 'scale(3)',
-    '& > * + *': {
-      marginLeft: theme.spacing(3)
-    }
-  }
-}))
+    display: "flex",
+    transform: "scale(3)",
+    "& > * + *": {
+      marginLeft: theme.spacing(3),
+    },
+  },
+}));
 
 export const Loading = () => {
-  const classes = useStyles()
-  const [progress, setProgress] = useState(0)
+  const classes = useStyles();
+  const [progress, setProgress] = useState(0);
 
   React.useEffect(() => {
     function tick() {
-      setProgress(oldProgress => (oldProgress >= 100 ? 100 : oldProgress + 1))
+      setProgress((oldProgress) =>
+        oldProgress >= 100 ? 100 : oldProgress + 1
+      );
     }
 
-    const timer = setInterval(tick, 20)
+    const timer = setInterval(tick, 20);
     return () => {
-      clearInterval(timer)
-    }
-  }, [])
+      clearInterval(timer);
+    };
+  }, []);
 
   return (
     <div id="loading">
@@ -33,10 +35,10 @@ export const Loading = () => {
         <CircularProgress
           variant="determinate"
           value={progress}
-          color={'inherit'}
+          color={"inherit"}
         />
       </div>
       <h1>RF</h1>
     </div>
-  )
-}
+  );
+};

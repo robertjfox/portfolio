@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Fade } from 'react-reveal'
+import React from "react";
+import { Fade } from "react-reveal";
 
 export const Project3 = () => {
   return (
@@ -55,5 +55,5 @@ export const Project3 = () => {
         </div>
       </Fade>
     </div>
-  )
-}
+  );
+};
